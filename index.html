@@ -2,25 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-
-
+<body class="dark-theme">
   
+  <main class="container flex">
+
+    <!-- HEADER/THEMES TOGGLE -->
+
+    <div class="header flex">
+        <h1>calc</h1>
+        <p class="uppercase">theme</p>
+      <div class="theme-toggle">
+        <div class="theme-toggle__numbers flex">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>    
+        </div>
+        <div class="slider-container flex">
+          <input type="range" value="1" min="1" max="3" class="slider">
+        </div>
+      </div> 
+    </div>
+
+    <!-- SCREEN -->
+
+    <div class="calc__screen flex">
+      <span id="calc__screen-output"></span>
+    </div>
+
+    <!-- KEYPAD -->
+
+    <div class="calc__keypad grid">
+      <div class="flex">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="delete uppercase">del</button>
+      </div>
+      <div class="flex">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>+</button>
+      </div>
+      <div class="flex">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>-</button>
+      </div>
+      <div class="flex">
+        <button>.</button>
+        <button>0</button>
+        <button>/</button>
+        <button>x</button>
+      </div>
+      <div class="flex">
+        <button class="double-button reset uppercase">reset</button>
+        <button class="double-button total uppercase">=</button>
+      </div>
+    </div>
+  </main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ivan Zbyrnia</a>.
   </div>
 </body>
 </html>

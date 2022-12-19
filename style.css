@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Dark theme */
+
+.dark-theme {
+    background-color: hsl(222, 26%, 31%);
+}
+
+.dark-theme .theme-toggle,
+.dark-theme h1, 
+.dark-theme p {
+    color: hsl(0, 0%, 100%);
+}
+
+.dark-theme .slider-container {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.dark-theme .slider-container > .slider {
+    background-color: hsl(6, 63%, 50%);
+}
+
+.dark-theme .slider-container > .slider:hover {
+    background-color: hsl(6,95%,65%);
+}
+
+.dark-theme .calc__keypad {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.dark-theme .calc__screen {
+    background-color: hsl(224, 36%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+.dark-theme button {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0 10px hsl(28, 16%, 65%);
+}
+
+.dark-theme button:hover, .dark-theme button:focus {
+    background-color: hsl(0,0%,100%);
+}
+
+.dark-theme .reset,
+.dark-theme .delete {
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(224, 28%, 35%);
+}
+
+.dark-theme .reset:hover, .dark-theme .reset:focus,
+.dark-theme .delete:hover, .dark-theme .delete:focus {
+    background-color: hsl(224,51%,76%);
+}
+
+.dark-theme .total {
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(6, 70%, 34%);
+}
+
+.dark-theme .total:hover, .dark-theme .total:focus {
+    background-color: hsl(6,95%,65%);
+}
+
+/* Light theme */
+
+.light-theme {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.light-theme .theme-toggle,
+.light-theme h1, 
+.light-theme p {
+    color: hsl(60, 10%, 19%);
+}
+
+.light-theme .slider-container {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.light-theme .slider-container > .slider {
+    background-color: hsl(25, 98%, 40%);
+}
+
+.light-theme .slider-container > .slider:hover {
+    background-color: hsl(25,100%,61%);
+}
+
+.light-theme .calc__keypad {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.light-theme .calc__screen {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+
+.light-theme button {
+    background-color: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+    box-shadow: 0 10px hsl(35, 11%, 61%);
+}
+
+.light-theme button:hover, .light-theme button:focus {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.light-theme .reset,
+.light-theme .delete {
+    background-color: hsl(185, 42%, 37%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(185, 58%, 25%);
+}
+
+.light-theme .reset:hover, .light-theme .reset:focus,
+.light-theme .delete:hover, .light-theme .delete:focus {
+    background-color: hsl(185,41%,56%);
+}
+
+.light-theme .total {
+    background-color: hsl(25, 98%, 40%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(25, 99%, 27%);
+}
+
+.light-theme .total:hover, .light-theme .total:focus {
+    background-color: hsl(25,100%,61%);
+}
+
+/* Purple theme */
+
+.purple-theme {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.purple-theme .theme-toggle,
+.purple-theme h1, 
+.purple-theme p {
+    color: hsl(52, 100%, 62%);
+}
+
+.purple-theme .slider-container {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.purple-theme .slider-container > .slider {
+    background-color: hsl(176, 100%, 44%);
+}
+
+.purple-theme .slider-container > .slider:hover {
+    background-color: hsl(177,100%,79%);
+}
+
+.purple-theme .calc__keypad {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.purple-theme .calc__screen {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+.purple-theme button {
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: hsl(290, 70%, 36%);
+}
+
+.purple-theme button:hover, .purple-theme button:focus {
+    background-color: hsl(267,54%,44%);
+}
+
+.purple-theme .reset,
+.purple-theme .delete {
+    background-color: hsl(281, 89%, 26%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(285, 91%, 52%);
+}
+
+.purple-theme .reset:hover, .purple-theme .reset:focus,
+.purple-theme .delete:hover, .purple-theme .delete:focus {
+    background-color: hsl(280,56%,44%);
+}
+
+.purple-theme .total {
+    background-color: hsl(176, 100%, 44%);
+    color: hsl(198, 20%, 13%);
+    box-shadow: hsl(177, 92%, 70%);
+}
+
+.purple-theme .total:hover, .purple-theme .total:focus {
+    background-color: hsl(177,100%,79%);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;    
+}
+
+body {
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.container {
+    justify-content: center;
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.theme-toggle {
+    min-width: min-content;
+}
+
+.theme-toggle__numbers {
+    padding-left: 0.1rem;
+    justify-content: space-between;
+    margin-inline: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.theme-toggle > .slider-container {
+    width: 4.25rem;
+    border-radius: 1rem;
+}
+
+.theme-toggle > .slider-container > .slider {
+    width: 4.25rem;
+    padding-inline: 0.3rem;
+    background-color: transparent;
+}
+
+
+
+.calc__screen {
+    width: 22rem;
+    height: 6.25rem;
+    border-radius: 0.75rem;
+    padding-right: 2.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.5rem;
+    overflow: hidden;
+}
+
+.calc__keypad {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 376px) {
+    
+    .calc__screen {
+      width: 32.25rem;
+      height: 7.25rem;
+      border-radius: 0.75rem;
+      font-size: 3rem;
+    }
+}
+
+button {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.75rem 0.5rem;
+    border: none;
+    border-radius: 0.25em;
+    padding-top: 0.75rem;
+}
+
+button:active {
+    box-shadow: 0 5px;
+    transform: translateY(5px);
+}
+
+@media (min-width: 376px) {
+
+    button {
+        height: 3.7rem;
+        width: 6rem;
+        margin: 0.9rem 0.75rem;
+        border-radius: 0.5rem;
+        font-size: 2.5rem;
+    }
+}
+
+.delete {
+    padding-top: 0.25rem;
+}
+  
+.double-button {
+    width: 9rem;
+    padding-top: 0.25rem;
+}
+
+@media (min-width: 376px) {
+    
+    .double-button {
+      width: 13.5rem;
+    }
+}
+
+.header {
+    align-items: flex-end;
+    width: 22rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 376px) {
+    .header {
+      width: 32rem;
+    }
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-right: auto;
+}
+
+.header p {
+    margin-right: 2rem;
+    padding-bottom: 0.25rem;
+    letter-spacing: 0.1rem;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
