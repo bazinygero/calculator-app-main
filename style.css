@@ -96,7 +96,7 @@
 }
 
 .light-theme .calc__keypad {
-    background-color: hsl(268, 71%, 12%);
+    background-color: hsl(0, 5%, 81%);
 }
 
 .light-theme .calc__screen {
@@ -172,7 +172,7 @@
 .purple-theme button {
     background-color: hsl(268, 47%, 21%);
     color: hsl(52, 100%, 62%);
-    box-shadow: hsl(290, 70%, 36%);
+    box-shadow: 0 10px hsl(290, 70%, 36%);
 }
 
 .purple-theme button:hover, .purple-theme button:focus {
