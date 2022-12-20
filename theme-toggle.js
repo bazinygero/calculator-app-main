@@ -3,7 +3,7 @@ const body = document.querySelector('body');
 
 slider.addEventListener('change', setTheme);
 window.addEventListener('load', () => {
-    slider.value = localStorage.getItem('prefered-theme');
+    slider.value = localStorage.getItem('prefers-color-scheme');
     setTheme();
 })
 
@@ -16,5 +16,5 @@ function setTheme() {
     } else if (slider.value === '3') {
         body.classList.add('purple-theme')
     }
-    localStorage.setItem('prefered-theme', slider.value);
+    localStorage.setItem('prefers-color-scheme', slider.value);
 }
