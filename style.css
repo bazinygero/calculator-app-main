@@ -6,6 +6,12 @@
     font-size: 2rem;
 }
 
+@media (max-width: 376px) {
+    :root {
+        font-size: 1rem;
+    }
+}
+
 /* Dark theme */
 
 .dark-theme {
@@ -22,11 +28,11 @@
     background-color: hsl(268, 71%, 12%);
 }
 
-.dark-theme .slider-container > .slider {
+.dark-theme .slider-container > .slider::-webkit-slider-thumb {
     background-color: hsl(6, 63%, 50%);
 }
 
-.dark-theme .slider-container > .slider:hover {
+.dark-theme .slider-container > .slider::-webkit-slider-thumb:hover {
     background-color: hsl(6,95%,65%);
 }
 
@@ -42,7 +48,7 @@
 .dark-theme button {
     background-color: hsl(30, 25%, 89%);
     color: hsl(221, 14%, 31%);
-    box-shadow: 0 10px hsl(28, 16%, 65%);
+    box-shadow: 0 0.3rem hsl(28, 16%, 65%);
 }
 
 .dark-theme button:hover, .dark-theme button:focus {
@@ -53,7 +59,7 @@
 .dark-theme .delete {
     background-color: hsl(225, 21%, 49%);
     color: hsl(0, 0%, 100%);
-    box-shadow: hsl(224, 28%, 35%);
+    box-shadow: 0 0.3rem hsl(224, 28%, 35%);
 }
 
 .dark-theme .reset:hover, .dark-theme .reset:focus,
@@ -64,7 +70,22 @@
 .dark-theme .total {
     background-color: hsl(6, 63%, 50%);
     color: hsl(0, 0%, 100%);
-    box-shadow: hsl(6, 70%, 34%);
+    box-shadow: 0 0.3rem hsl(6, 70%, 34%);
+}
+
+@media (max-width: 376px) {
+    .dark-theme button {
+        box-shadow:0 0.2rem hsl(28, 16%, 65%);
+    }
+
+    .dark-theme .reset,
+    .dark-theme .delete {
+        box-shadow: 0 0.2rem hsl(224, 28%, 35%);
+    }
+
+    .dark-theme .total {
+        box-shadow: 0 0.2rem hsl(6, 70%, 34%);
+    }
 }
 
 .dark-theme .total:hover, .dark-theme .total:focus {
@@ -87,11 +108,11 @@
     background-color: hsl(268, 71%, 12%);
 }
 
-.light-theme .slider-container > .slider {
+.light-theme .slider-container > .slider::-webkit-slider-thumb {
     background-color: hsl(25, 98%, 40%);
 }
 
-.light-theme .slider-container > .slider:hover {
+.light-theme .slider-container > .slider::-webkit-slider-thumb:hover {
     background-color: hsl(25,100%,61%);
 }
 
@@ -107,7 +128,7 @@
 .light-theme button {
     background-color: hsl(45, 7%, 89%);
     color: hsl(60, 10%, 19%);
-    box-shadow: 0 10px hsl(35, 11%, 61%);
+    box-shadow: 0 0.3rem hsl(35, 11%, 61%);
 }
 
 .light-theme button:hover, .light-theme button:focus {
@@ -118,7 +139,7 @@
 .light-theme .delete {
     background-color: hsl(185, 42%, 37%);
     color: hsl(0, 0%, 100%);
-    box-shadow: hsl(185, 58%, 25%);
+    box-shadow: 0 0.3rem hsl(185, 58%, 25%);
 }
 
 .light-theme .reset:hover, .light-theme .reset:focus,
@@ -129,7 +150,22 @@
 .light-theme .total {
     background-color: hsl(25, 98%, 40%);
     color: hsl(0, 0%, 100%);
-    box-shadow: hsl(25, 99%, 27%);
+    box-shadow: 0 0.3rem hsl(25, 99%, 27%);
+}
+
+@media (max-width: 376px) {
+    .light-theme button {
+        box-shadow:0 0.2rem hsl(35, 11%, 61%);
+    }
+
+    .light-theme .reset,
+    .light-theme .delete {
+        box-shadow: 0 0.2rem hsl(185, 58%, 25%);
+    }
+
+    .light-theme .total {
+        box-shadow: 0 0.2rem hsl(25, 99%, 27%);
+    }
 }
 
 .light-theme .total:hover, .light-theme .total:focus {
@@ -152,11 +188,11 @@
     background-color: hsl(268, 71%, 12%);
 }
 
-.purple-theme .slider-container > .slider {
+.purple-theme .slider-container > .slider::-webkit-slider-thumb {
     background-color: hsl(176, 100%, 44%);
 }
 
-.purple-theme .slider-container > .slider:hover {
+.purple-theme .slider-container > .slider::-webkit-slider-thumb:hover {
     background-color: hsl(177,100%,79%);
 }
 
@@ -172,7 +208,7 @@
 .purple-theme button {
     background-color: hsl(268, 47%, 21%);
     color: hsl(52, 100%, 62%);
-    box-shadow: 0 10px hsl(290, 70%, 36%);
+    box-shadow: 0 0.3rem hsl(290, 70%, 36%);
 }
 
 .purple-theme button:hover, .purple-theme button:focus {
@@ -183,7 +219,7 @@
 .purple-theme .delete {
     background-color: hsl(281, 89%, 26%);
     color: hsl(0, 0%, 100%);
-    box-shadow: hsl(285, 91%, 52%);
+    box-shadow: 0 0.3rem hsl(285, 91%, 52%);
 }
 
 .purple-theme .reset:hover, .purple-theme .reset:focus,
@@ -193,8 +229,23 @@
 
 .purple-theme .total {
     background-color: hsl(176, 100%, 44%);
-    color: hsl(198, 20%, 13%);
-    box-shadow: hsl(177, 92%, 70%);
+    color: hsl(198, 19%, 14%);
+    box-shadow: 0 0.3rem hsl(177, 92%, 70%);
+}
+
+@media (max-width: 376px) {
+    .purple-theme button {
+        box-shadow:0 0.2rem hsl(290, 70%, 36%);
+    }
+
+    .purple-theme .reset,
+    .purple-theme .delete {
+        box-shadow: 0 0.2rem hsl(285, 91%, 52%);
+    }
+
+    .purple-theme .total {
+        box-shadow: 0 0.2rem hsl(177, 92%, 70%);
+    }
 }
 
 .purple-theme .total:hover, .purple-theme .total:focus {
@@ -232,7 +283,7 @@ body {
     padding-top: 2rem;
     flex-direction: column;
     align-items: center;
-    padding-inline: 2em;
+    padding-inline: 2rem;
     margin-inline: auto;
     max-width: 80rem;
 }
@@ -256,13 +307,25 @@ body {
 .theme-toggle > .slider-container > .slider {
     width: 4.25rem;
     padding-inline: 0.3rem;
+    -webkit-appearance: none;
     background-color: transparent;
 }
 
-
+.theme-toggle > .slider-container > .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-margin-before: 0.3rem;
+            margin-block-start: 0.3rem;
+    -webkit-margin-after: 0.3rem;
+            margin-block-end: 0.3rem;
+    cursor: pointer;
+}
+  
 
 .calc__screen {
-    width: 22rem;
+    width: 24rem;
     height: 6.25rem;
     border-radius: 0.75rem;
     padding-right: 2.5rem;
@@ -279,24 +342,25 @@ body {
     margin-top: 2rem;
 }
 
-@media (min-width: 376px) {
+@media (max-width: 376px) {
     
     .calc__screen {
-      width: 32.25rem;
-      height: 7.25rem;
-      border-radius: 0.75rem;
-      font-size: 3rem;
+      width: 21.5rem;
+      height: 5rem;
+      border-radius: 0.5rem;
+      font-size: 2rem;
     }
 }
 
 button {
     cursor: pointer;
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 3rem;
     margin: 0.75rem 0.5rem;
     border: none;
-    border-radius: 0.25em;
+    border-radius: 0.3em;
     padding-top: 0.75rem;
+    font-size: 1.5rem;
 }
 
 button:active {
@@ -304,14 +368,14 @@ button:active {
     transform: translateY(5px);
 }
 
-@media (min-width: 376px) {
+@media (max-width: 376px) {
 
     button {
-        height: 3.7rem;
-        width: 6rem;
-        margin: 0.9rem 0.75rem;
-        border-radius: 0.5rem;
-        font-size: 2.5rem;
+        height: 2.3rem;
+        width: 3.75rem;
+        margin: 0.6rem 0.6rem;
+        border-radius: 0.32rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -320,14 +384,14 @@ button:active {
 }
   
 .double-button {
-    width: 9rem;
+    width: 10rem;
     padding-top: 0.25rem;
 }
 
-@media (min-width: 376px) {
+@media (max-width: 376px) {
     
     .double-button {
-      width: 13.5rem;
+      width: 8.75rem;
     }
 }
 
@@ -337,9 +401,9 @@ button:active {
     padding-bottom: 0.5rem;
 }
 
-@media (min-width: 376px) {
+@media (max-width: 376px) {
     .header {
-      width: 32rem;
+      width: 21.5rem;
     }
 }
 
